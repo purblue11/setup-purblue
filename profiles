@@ -1,0 +1,25 @@
+### General command line setting
+## export
+export GREP_OPTIONS='--color=auto'
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+export PS1='\u@\h \[\e[33m\]\w/\[\e[0m\]\n\[\e[34;1m\]$ \[\e[m\]'
+
+## Alias
+# General
+alias lsl="ls -hal"
+
+# Git
+alias gs="git status"
+alias gcm="git checkout master"
+alias gf="git fetch upstream"
+alias gm="git merge upstream/master"
+alias gp="git push origin master"
+
+# Siri
+alias goJitd="cd $SIRI_HOME/jitd/"
+alias goAssistant="cd $SIRI_HOME/assistant"
+alias goVoc="cd $SIRI_HOME/assistant/product/assistant/nl/src/main/filesystem/data/nl/siri/voc"
+alias goVocJitd="cd $SIRI_HOME/jitd/src/main/filesystem/data/nl/siri/voc/cannedUtterance/"
+alias gbJitd="gradlew buildJitd -Plocales=ko_KR"
+alias openAssistantNlx="vim $SIRI_HOME/assistant/product/assistant/nl/src/main/resources/assistant.nlx"
